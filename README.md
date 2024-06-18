@@ -1,23 +1,22 @@
-# holmesgpt-community-toolsets
+# Community Toolsets for the HolmesGPT OpenSource Agent
 Collection of community contributed [HolmesGPT](https://github.com/robusta-dev/holmesgpt) toolsets
-
 
 New toolsets are loaded by running HolmesGPT with `-t /path/to/custom/toolset`. Use -t multiple times to add multiple toolsets .
 
-# Community Toolsets in this Repo
+# Toolsets in this Repo
 ## GitHub
 
-When to use this toolset
+When to use this toolset: TODO
 
 Example usage:
 
 ```
-$ holmes ask ...
+$ holmes ask TODO
 
 output of command here
 ```
 
-[View the toolset's source.](./github)
+[Toolset source.](./github)
 
 # Adding Your Own ToolSet
 1. Create a new directory with the name of your toolset
