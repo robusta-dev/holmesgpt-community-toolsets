@@ -16,9 +16,9 @@ $ holmes ask TODO
 output of command here
 ```
 
-[Toolset source.](./github)
+[Toolset source](./github)
 
-# Adding Your Own ToolSet
+# Adding Your Own Toolset
 1. Create a new directory with the name of your toolset
 2. Put your toolset.yaml file inside of it. Make sure that the toolset has a unique name which wont override existing toolsets!
 3. Edit this README.md to add your toolset. Please follow the format of existing toolsets. Make sure that:
