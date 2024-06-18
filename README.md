@@ -21,7 +21,7 @@ output of command here
 # Adding Your Own Toolset
 1. Create a new directory with the name of your toolset
 2. Put your toolset.yaml file inside of it. Make sure that the toolset has a unique name which wont override existing toolsets!
-3. Edit this README.md to add your toolset. Please follow the format of existing toolsets. Make sure that:
-* You include a real world `holmes ask` command showing how the toolset can be used (share real world output, but you can sanitize it if necessary)
-* You tested the command before opening this PR and verified that the command works
+3. Edit this README.md to add your toolset. Please follow the format of existing toolsets.
+* You must include a real world `holmes ask` command showing how the toolset can be used (share real world output, but sanitize it if necessary)
+* You must test the command before opening this PR and verify that the command works
 
