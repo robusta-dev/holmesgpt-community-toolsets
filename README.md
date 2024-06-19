@@ -6,12 +6,12 @@ New toolsets are loaded by running HolmesGPT with `-t /path/to/custom/toolset`. 
 # Toolsets in this Repo
 ## GitHub
 
-When to use this toolset:
+When to use this toolset: to investigate failed GitHub actions
 
 Example usage:
 
-```
-$holmes ask "Can you check the docker build job fail in robusta-dev/experimental-ai-investigation repo" -t examples/github/ghcli-toolset.yaml
+```console
+$ holmes ask "Can you check the docker build job fail in robusta-dev/experimental-ai-investigation repo" -t examples/github/toolset.yaml
 User: Can you check the docker build job fail in robusta-dev/experimental-ai-investigation repo
 Running `gh workflow list --all --repo robusta-dev/experimental-ai-investigation`                                                                        tools.py:89
 Running `gh run list --workflow 100271757 --repo robusta-dev/experimental-ai-investigation`                                                              tools.py:89
