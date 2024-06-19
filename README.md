@@ -6,14 +6,24 @@ New toolsets are loaded by running HolmesGPT with `-t /path/to/custom/toolset`. 
 # Toolsets in this Repo
 ## GitHub
 
-When to use this toolset: TODO
+When to use this toolset:
 
 Example usage:
 
 ```
-$ holmes ask TODO
+$holmes ask "Can you check the docker build job fail in robusta-dev/experimental-ai-investigation repo" -t examples/github/ghcli-toolset.yaml
+User: Can you check the docker build job fail in robusta-dev/experimental-ai-investigation repo
+Running `gh workflow list --all --repo robusta-dev/experimental-ai-investigation`                                                                        tools.py:89
+Running `gh run list --workflow 100271757 --repo robusta-dev/experimental-ai-investigation`                                                              tools.py:89
+Running `gh api /repos/robusta-dev/experimental-ai-investigation/actions/runs/9290945280/jobs`                                                           tools.py:89
+Running `gh run view --job 25568377591 --repo robusta-dev/experimental-ai-investigation --log-failed`                                                    tools.py:89
+AI: The Docker build job failed due to a missing config.yaml file. The error occurred during the COPY config.yaml /app/ step in the Dockerfile.
 
-output of command here
+Error:
+                    
+ ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref q5l980c2guz3c2j2oaxes75wd::t7psmav6y8vngu63119mpla4d: "/config.yaml": not 
+                                                                                                                                    
+Ensure config.yaml exists in the build context.         
 ```
 
 [Toolset source](./github)
